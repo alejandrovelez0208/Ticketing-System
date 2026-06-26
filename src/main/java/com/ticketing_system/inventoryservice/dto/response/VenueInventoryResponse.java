@@ -1,17 +1,17 @@
 package com.ticketing_system.inventoryservice.dto.response;
 
-import com.ticketing_system.inventoryservice.entity.Venue;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
-public class EventInventoryResponse {
+public class VenueInventoryResponse {
 
-	private String event;
-	private Long capacity;
-	private Venue venue;
+	private Long venueId;
+	private String venueName;
+	private Long totalCapacity;
 }
